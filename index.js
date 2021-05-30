@@ -24,7 +24,6 @@ client.aliases = new Collection();
     //const krs = client.guilds.cache.get("738294317432438865").memberCount;
     
     const status = [
-    `Whizkazz x KarsaBestari`,
     `Anti Raid Bot`,
     `${client.users.cache.size} Users`
     ]

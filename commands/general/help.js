@@ -14,10 +14,10 @@ module.exports = {
           .setDescription("Bot Anti-Raid Collab Whizkazz x Karsa")
           
           .addField('SETUP' , '`logs` , `menu` , `punishment` , `clearuser`')
-          .addField('LIMIT' , '`banlimit` ,  , `channelcreatelimit` , `channeldeletelimit`')
-          .addField("TRUSTED", '`addtrustedlist` , `removetrusted`')
+          .addField('LIMIT' , '`banlimit` , `kicklimit` , `channelcreatelimit` , `channeldeletelimit` , `rolecreatelimit` , `roledeletelimit`')
+          .addField("TRUSTED", '`addtrustedlist` , `removetrusted` , `trustedlist`')
         
-          .addField("SUPPORT", " [Whizkazz](https://discord.gg/GJQYKR9YVV)| [Karsa](https://discord.gg/5wDwU2ERcZ)", true)
+          .addField("SUPPORT", "[Support Server](https://discord.gg/caX4QFHGnN) | [Whizkazz](https://discord.gg/GJQYKR9YVV) | [Karsa](https://discord.gg/5wDwU2ERcZ)", true)
           .setFooter(dev)
           .setColor(color)
           .setTimestamp()
