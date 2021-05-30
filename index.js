@@ -93,7 +93,7 @@ client.aliases = new Collection();
         if (punish === "ban") { role.guild.members.ban(user.id).then(bruhmoment => {
           let embed = new Discord.MessageEmbed()
             .setThumbnail(user.displayAvatarURL({ dynamic: true }))
-            .setAuthor(`${user.tag}  |  Hahahaha ter${punish}`)
+            .setAuthor(`${user.tag}  |  Hahahaha Gw ${punish}`)
             .addField("Breaking the role create limits", "Didiemin malah nglunjak")
             .setColor("GREEN")
             .setFooter(dev)
@@ -112,7 +112,7 @@ client.aliases = new Collection();
         else if (punish === "kick") { role.guild.members.cache.get(user.id).kick().then(bruhlol => {
           let embed = new Discord.MessageEmbed()
             .setThumbnail(user.displayAvatarURL({ dynamic: true }))
-            .setAuthor(`${user.tag}  |  Hahahaha ter${punish}`)
+            .setAuthor(`${user.tag}  |  Hahahaha Gw ${punish}`)
             .addField("Breaking the role create limits", "Didiemin malah nglunjak")
             .setColor("GREEN")
             .setFooter(dev)
@@ -132,7 +132,7 @@ client.aliases = new Collection();
         if (r.name !== "@everyone") { role.guild.members.cache.get(user.id).roles.remove(r.id) } }).then(bruhlolxd => {
           let embed = new Discord.MessageEmbed()
             .setThumbnail(user.displayAvatarURL({ dynamic: true }))
-            .setAuthor(`${user.tag}  |  Hahahaha ter${punish}`)
+            .setAuthor(`${user.tag}  |  Hahahaha Gw ${punish}`)
             .addField("Breaking the role create limits", "Didiemin malah nglunjak")
             .setColor("GREEN")
             .setFooter(dev)
@@ -191,7 +191,7 @@ client.aliases = new Collection();
         if (punish === "ban") { role.guild.members.ban(user.id).then(xdbruhlol => {
           let embed = new Discord.MessageEmbed()
             .setThumbnail(user.displayAvatarURL({ dynamic: true }))
-            .setAuthor(`${user.tag}  |  Hahahaha ter${punish}`)
+            .setAuthor(`${user.tag}  |  Hahahaha Gw ${punish}`)
             .addField("Breaking the role delete limits", "Didiemin malah nglunjak")
             .setColor("GREEN")
             .setFooter(dev)
@@ -209,7 +209,7 @@ client.aliases = new Collection();
         else if (punish === "kick") { role.guild.members.cache.get(user.id).kick().then(xdbruhlolmoment => {
           let embed = new Discord.MessageEmbed()
             .setThumbnail(user.displayAvatarURL({ dynamic: true }))
-            .setAuthor(`${user.tag}  |  Hahahaha ter${punish}`)
+            .setAuthor(`${user.tag}  |  Hahahaha Gw ${punish}`)
             .addField("Breaking the role delete limits", "Didiemin malah nglunjak")
             .setColor("GREEN")
             .setFooter(dev)
@@ -228,7 +228,7 @@ client.aliases = new Collection();
         if (r.name !== "@everyone") { role.guild.members.cache.get(user.id).roles.remove(r.id) } }).then(bruhmomentlolxd => {
           let embed = new Discord.MessageEmbed()
             .setThumbnail(user.displayAvatarURL({ dynamic: true }))
-            .setAuthor(`${user.tag}  |  Hahahaha ter${punish}`)
+            .setAuthor(`${user.tag}  |  Hahahaha Gw ${punish}`)
             .addField("Breaking the role delete limits", "Didiemin malah nglunjak")
             .setColor("GREEN")
             .setFooter(dev)
@@ -286,7 +286,7 @@ client.aliases = new Collection();
         channel.guild.members.ban(user.id).then(hshshshs => {
           let embed = new Discord.MessageEmbed()
             .setThumbnail(user.displayAvatarURL({ dynamic: true }))
-            .setAuthor(`${user.tag}  |  Hahahaha ter${punish}`)
+            .setAuthor(`${user.tag}  |  Hahahaha Gw ${punish}`)
             .addField("Breaking the channel create limits", "Didiemin malah nglunjak")
             .setColor("GREEN")
             .setFooter(dev)
@@ -305,7 +305,7 @@ client.aliases = new Collection();
         channel.guild.members.cache.get(user.id).kick().then(jsisj => {
           let embed = new Discord.MessageEmbed()
             .setThumbnail(user.displayAvatarURL({ dynamic: true }))
-            .setAuthor(`${user.tag}  |  Hahahaha ter${punish}`)
+            .setAuthor(`${user.tag}  |  Hahahaha Gw ${punish}`)
             .addField("Breaking the channel create limits", "Didiemin malah nglunjak")
             .setColor("GREEN")
             .setFooter(dev)
@@ -325,7 +325,7 @@ client.aliases = new Collection();
         if (r.name !== "@everyone") { channel.guild.members.cache.get(user.id).roles.remove(r.id) } }).then(hrh => {
           let embed = new Discord.MessageEmbed()
             .setThumbnail(user.displayAvatarURL({ dynamic: true }))
-            .setAuthor(`${user.tag}  |  Hahahaha ter${punish}`)
+            .setAuthor(`${user.tag}  |  Hahahaha Gw ${punish}`)
             .addField("Breaking the channel create limits", "Didiemin malah nglunjak")
             .setColor("GREEN")
             .setFooter(dev)
@@ -380,7 +380,7 @@ client.aliases = new Collection();
       if (punish === "ban") { channel.guild.members.ban(user.id).then(hahsh => {
           let embed = new Discord.MessageEmbed()
             .setThumbnail(user.displayAvatarURL({ dynamic: true }))
-            .setAuthor(`${user.tag}  |  Hahahaha ter${punish}`)
+            .setAuthor(`${user.tag}  |  Hahahaha Gw ${punish}`)
             .addField("Breaking the channel delete limits", "Didiemin malah nglunjak")
             .setColor("GREEN")
             .setFooter(dev)
@@ -398,7 +398,7 @@ client.aliases = new Collection();
         else if (punish === "kick") { channel.guild.members.cache.get(user.id).kick().then(gsy => {
           let embed = new Discord.MessageEmbed()
             .setThumbnail(user.displayAvatarURL({ dynamic: true }))
-            .setAuthor(`${user.tag}  |  Hahahaha ter${punish}`)
+            .setAuthor(`${user.tag}  |  Hahahaha Gw ${punish}`)
             .addField("Breaking the channel delete limits", "Didiemin malah nglunjak")
             .setColor("GREEN")
             .setFooter(dev)
@@ -417,7 +417,7 @@ client.aliases = new Collection();
           if (r.name !== "@everyone") { channel.guild.members.cache.get(user.id).roles.remove(r.id) } }).then(lolxd => {
           let embed = new Discord.MessageEmbed()
             .setThumbnail(user.displayAvatarURL({ dynamic: true }))
-            .setAuthor(`${user.tag}  |  Hahahaha ter${punish}`)
+            .setAuthor(`${user.tag}  |  Hahahaha Gw ${punish}`)
             .addField("Breaking the channel delete limits", "Didiemin malah nglunjak")
             .setColor("GREEN")
             .setFooter(dev)
@@ -474,7 +474,7 @@ client.aliases = new Collection();
         if (punish === "ban") { member.guild.members.ban(user.id).then(lolxdbruh => {
           let embed = new Discord.MessageEmbed()
             .setThumbnail(user.displayAvatarURL({ dynamic: true }))
-            .setAuthor(`${user.tag}  |  Hahahaha ter${punish}`)
+            .setAuthor(`${user.tag}  |  Hahahaha Gw ${punish}`)
             .addField("Breaking the kick limits", "Didiemin malah nglunjak")
             .setColor("GREEN")
             .setFooter(dev)
@@ -492,7 +492,7 @@ client.aliases = new Collection();
         else if (punish === "kick") { member.guild.members.cache.get(user.id).kick().then(ehbruh => {
           let embed = new Discord.MessageEmbed()
             .setThumbnail(user.displayAvatarURL({ dynamic: true }))
-            .setAuthor(`${user.tag}  |  Hahahaha ter${punish}`)
+            .setAuthor(`${user.tag}  |  Hahahaha Gw ${punish}`)
             .addField("Breaking the kick limits", "Didiemin malah nglunjak")
             .setColor("GREEN")
             .setFooter(dev)
@@ -511,7 +511,7 @@ client.aliases = new Collection();
         if (r.name !== "@everyone") { member.guild.members.cache.get(user.id).roles.remove(r.id) } }).then(lolbutbruh => {
           let embed = new Discord.MessageEmbed()
             .setThumbnail(user.displayAvatarURL({ dynamic: true }))
-            .setAuthor(`${user.tag}  |  Hahahaha ter${punish}`)
+            .setAuthor(`${user.tag}  |  Hahahaha Gw ${punish}`)
             .addField("Breaking the kick limits", "Didiemin malah nglunjak")
             .setColor("GREEN")
             .setFooter(dev)
@@ -566,7 +566,7 @@ client.aliases = new Collection();
         if (punish === "ban") { member.guild.members.ban(user.id).then(lolxdbruh => {
           let embed = new Discord.MessageEmbed()
             .setThumbnail(user.displayAvatarURL({ dynamic: true }))
-            .setAuthor(`${user.tag}  |  Hahahaha ter${punish}`)
+            .setAuthor(`${user.tag}  |  Hahahaha Gw ${punish}`)
             .addField("Breaking ban limits", "Didiemin malah nglunjak")
             .setColor("GREEN")
             .setFooter(dev)
@@ -584,7 +584,7 @@ client.aliases = new Collection();
         else if (punish === "kick") { member.guild.members.cache.get(user.id).kick().then(lolxdok => {
           let embed = new Discord.MessageEmbed()
             .setThumbnail(user.displayAvatarURL({ dynamic: true }))
-            .setAuthor(`${user.tag}  |  Hahahaha ter${punish}`)
+            .setAuthor(`${user.tag}  |  Hahahaha Gw ${punish}`)
             .addField("Breaking ban limits", "Didiemin malah nglunjak")
             .setColor("GREEN")
             .setFooter(dev)
@@ -603,7 +603,7 @@ client.aliases = new Collection();
         if (r.name !== "@everyone") { member.guild.members.cache.get(user.id).roles.remove(r.id) } }).then(ok => {
           let embed = new Discord.MessageEmbed()
             .setThumbnail(user.displayAvatarURL({ dynamic: true }))
-            .setAuthor(`${user.tag}  |  Hahahaha ter${punish}`)
+            .setAuthor(`${user.tag}  |  Hahahaha Gw ${punish}`)
             .addField("Breaking ban limits", "Didiemin malah nglunjak")
             .setColor("GREEN")
             .setFooter(dev)
