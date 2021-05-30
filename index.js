@@ -3,6 +3,7 @@ const { Client, Collection } = require('discord.js');
 const client = new Client({disableMentions: 'everyone'}, {ws:{properties:{$browser: "Discord Android" }}});
 const { prefix } = require('./config.json');
 const db = require("quick.db")
+const dev = "Axan Ft. Zicc Developer"
 
 
 client.commands = new Collection();
@@ -61,13 +62,15 @@ client.aliases = new Collection();
     let command = client.commands.get(cmd);
     if (!command) command = client.commands.get(client.aliases.get(cmd));
     if (command) command.run(client, message, args, db, color, yes, no, dev);
+})
 
-
-
+    
 //* ----------------------------- ~ AXAN $ ZICC ~ ----------------------------- *//
 
 
-  client.on("roleCreate", async role => {
+  client.on("roleCreate", async (role, message) => {
+
+
     
     if (role.managed === true) return;
     const log = await role.guild.fetchAuditLogs({ type: 'ROLE_CREATE' }).then(audit => audit.entries.first())
@@ -94,8 +97,8 @@ client.aliases = new Collection();
             .addField("Case", "Tried To Raid | breaking the role create limits")
             .addField("Punishment", punish)
             .addField("Banned", "Yes")
+            .setColor("GREEN")
             .setFooter(dev)
-            .setColor(color)
             .setTimestamp()
         if (logs) { return logs.send({ embed: embed }) } } ).catch(err => {
           let embed = new Discord.MessageEmbed()
@@ -727,5 +730,3 @@ client.aliases = new Collection();
   })
 
   client.login(process.env.token).catch(err => { console.log('[ERROR]: Invalid Token Provided'); });
-    
-  });
