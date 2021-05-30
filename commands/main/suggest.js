@@ -32,15 +32,15 @@ module.exports = {
           .setFooter(`Dari ${message.author.username}#${message.member.user.discriminator}`)
         channel.send(embed)
       
-        .then(m => { m.react("✅")
-                     m.react("❌") } ) 
+        .then(m => { m.react("848429615323021354")
+                     m.react("848429469688397854") } ) 
     { 
       
         const sug = new Discord.MessageEmbed()
           .setColor(color)
           .setAuthor("SUGESTION")
-          .setThumbnail(client.user.displayAvatarURL())
-          .setDescription(`Mengirim saran kamu ke ${channel}`)
+          .setThumbnail(yes)
+          .addField("SUKSES", `Mengirim saran kamu ke ${channel}`)
           .setFooter(`Terimakasih ${message.author.username}#${message.member.user.discriminator}`)
           .setTimestamp()
         message.channel.send(sug) 

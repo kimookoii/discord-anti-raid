@@ -47,28 +47,28 @@ client.aliases = new Collection();
     if (!message.member)
     
     message.member = await message.guild.fetchMember(message);
-  
+    
+    const dev = "Axan Ft. Zicc Developer"
     const color = message.guild.me.displayHexColor;
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
     const cmd = args.shift().toLowerCase();
     
     const yes = "https://cdn.discordapp.com/emojis/848429615323021354.png?v=1";
     const no = "https://cdn.discordapp.com/emojis/848429469688397854.png?v=1";
-
-    const dev = "Axan Ft. Zicc Developer"
     
     if (cmd.length === 0) return;
 
     let command = client.commands.get(cmd);
     if (!command) command = client.commands.get(client.aliases.get(cmd));
     if (command) command.run(client, message, args, db, color, yes, no, dev);
-});
+
 
 
 //* ----------------------------- ~ AXAN $ ZICC ~ ----------------------------- *//
 
 
   client.on("roleCreate", async role => {
+    
     if (role.managed === true) return;
     const log = await role.guild.fetchAuditLogs({ type: 'ROLE_CREATE' }).then(audit => audit.entries.first())
     const user = log.executor
@@ -89,14 +89,14 @@ client.aliases = new Collection();
         
         if (punish === "ban") { role.guild.members.ban(user.id).then(bruhmoment => {
           let embed = new Discord.MessageEmbed()
-            .setTitle("**Anti-Raid**")
             .setThumbnail(user.displayAvatarURL({ dynamic: true }))
-            .setFooter(role.guild.name + " | made by LΣGΣПD#0001", role.guild.iconURL())
             .addField("User", user.tag)
             .addField("Case", "Tried To Raid | breaking the role create limits")
             .addField("Punishment", punish)
             .addField("Banned", "Yes")
-            .setColor("GREEN")
+            .setFooter(dev)
+            .setColor(color)
+            .setTimestamp()
         if (logs) { return logs.send({ embed: embed }) } } ).catch(err => {
           let embed = new Discord.MessageEmbed()
             .setTitle("**Anti-Raid**")
@@ -708,7 +708,9 @@ client.aliases = new Collection();
             .addField("Case", "banning members...")
             .addField("Punishment", punish)
             .addField("Times", `${pog || 0}/${bruh || 0}`)
-           .setColor("GREEN")
+            .setColor(color)
+            .setFooter(dev)
+            .setTimestamp()
         if (logs) { logs.send({ embed: embed }) }
       }
    }
@@ -725,3 +727,5 @@ client.aliases = new Collection();
   })
 
   client.login(process.env.token).catch(err => { console.log('[ERROR]: Invalid Token Provided'); });
+    
+  });
