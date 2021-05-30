@@ -12,8 +12,9 @@ module.exports = {
           .setAuthor("ANTI RAID HELP")
           .setThumbnail(client.user.displayAvatarURL({ dynamic: true }))
           .setDescription("Bot Anti-Raid Collab Whizkazz x Karsa")
-          
-          .addField('SETUP' , '`logs` , `menu` , `punishment` , `clearuser`')
+        
+          .addField('MAIN' , 'menu`')
+          .addField('SETUP' , '`logs` , `punishment` , `clearuser`')
           .addField('LIMIT' , '`banlimit` , `kicklimit` , `channelcreatelimit` , `channeldeletelimit` , `rolecreatelimit` , `roledeletelimit`')
           .addField("TRUSTED", '`addtrustedlist` , `removetrusted` , `trustedlist`')
         

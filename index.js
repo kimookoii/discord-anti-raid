@@ -25,7 +25,8 @@ client.aliases = new Collection();
     
     const status = [
     `Anti Raid Bot`,
-    `${client.users.cache.size} Users`
+    `$help | ${client.users.cache.size} Users`,
+    `$help | ${client.guilds.cache.size} Servers`,
     ]
     
   setInterval(() => {
