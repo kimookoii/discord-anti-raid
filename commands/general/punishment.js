@@ -1,0 +1,48 @@
+const Discord = require("discord.js")
+
+module.exports = {
+  name: "punishment",
+  run: async (client, message, args, db, color, yes, no) => {
+    
+    
+//* ----------------------------- ~ AXAN $ ZICC ~ ----------------------------- *//
+    
+    
+      function check(msg, arr) { return arr.some(op => op.toLowerCase() === msg.toLowerCase());
+    }
+    
+      if (!args[1]) {
+        let missing = new Discord.MessageEmbed()
+          .setThumbnail(no)
+          .addField("EROR", "Beri hukuman yg bener")
+          .addField("CONTOH", "punishment ban\npunishment kick\npunishment demote")
+          .setFooter("XNXX Development")
+          .setColor(color)
+          .setTimestamp()
+        return message.channel.send(missing);
+      }
+    
+    
+      if (check(args[1], ["ban", "kick", "demote"]) === false) {
+        let missing = new Discord.MessageEmbed()
+          .setThumbnail(no)
+          .addField("EROR", "Beri hukuman yg bener")
+          .addField("CONTOH", "punishment ban\npunishment kick\npunishment demote")
+          .setFooter("XNXX Development")
+          .setColor(color)
+          .setTimestamp()
+        return message.channel.send(missing);
+      }
+    
+    
+        db.set(`punish_${message.guild.id}`, args[1].toLowerCase())
+        let ok = new Discord.MessageEmbed()
+          .setThumbnail(yes)
+          .addField("SUKSES", `Hukuman diatur ke ${args[1]}`)
+          .addField("CONTOH", "punishment ban\npunishment kick\npunishment demote")
+          .setFooter("XNXX Development")
+          .setColor(color)
+          .setTimestamp()
+        return message.channel.send(ok);
+      }
+    }
