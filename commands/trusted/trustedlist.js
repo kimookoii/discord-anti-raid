@@ -1,7 +1,7 @@
 const Discord = require("discord.js")
 module.exports = {
   name: "trustedlist",
-  run: async (client, message, args, db, color, yes, no) => {
+  run: async (client, message, args, db, color, yes, no, dev) => {
     
     
 //* ----------------------------- ~ AXAN $ ZICC ~ ----------------------------- *//
@@ -19,9 +19,9 @@ module.exports = {
         if(whitelisted && whitelisted.length) { whitelisted.forEach(x => { bruh.push(`<@${x.user}>`)})
                                                 
           embed.setDescription(`${bruh.join("\n")}`)
-          embed.setThumbnail(yes)
+          embed.setThumbnail(client.user.displayAvatarURL({ dynamic: true }))
           embed.setColor(color)
-          embed.setFooter("XNXX Development")
+          embed.setFooter(dev)
           embed.setTimestamp()
       } 
     
@@ -29,7 +29,7 @@ module.exports = {
           embed.setDescription("Tidak ada user pada trusted list")
           embed.setThumbnail(no)
           embed.setColor(color)
-          embed.setFooter("XNXX Development")
+          embed.setFooter(dev)
           embed.setTimestamp()
       }
     

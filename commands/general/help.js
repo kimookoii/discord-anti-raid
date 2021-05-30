@@ -2,7 +2,7 @@ const Discord = require("discord.js")
 
 module.exports = {
   name: "help",
-  run: async (client, message, args, db, color, yes, no) => {
+  run: async (client, message, args, db, color, yes, no, dev) => {
     
     
 //* ----------------------------- ~ AXAN $ ZICC ~ ----------------------------- *//
@@ -18,7 +18,7 @@ module.exports = {
           .addField("TRUSTED", '`addtrustedlist` , `removetrusted`')
         
           .addField("SUPPORT", " [Whizkazz](https://discord.gg/GJQYKR9YVV)| [Karsa](https://discord.gg/5wDwU2ERcZ)", true)
-          .setFooter("XNXX Development")
+          .setFooter(dev)
           .setColor(color)
           .setTimestamp()
         

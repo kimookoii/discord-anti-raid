@@ -2,7 +2,7 @@ const Discord = require("discord.js")
 
 module.exports = {
   name: "punishment",
-  run: async (client, message, args, db, color, yes, no) => {
+  run: async (client, message, args, db, color, yes, no, dev) => {
     
     
 //* ----------------------------- ~ AXAN $ ZICC ~ ----------------------------- *//
@@ -16,7 +16,7 @@ module.exports = {
           .setThumbnail(no)
           .addField("EROR", "Beri hukuman yg bener")
           .addField("CONTOH", "punishment ban\npunishment kick\npunishment demote")
-          .setFooter("XNXX Development")
+          .setFooter(dev)
           .setColor(color)
           .setTimestamp()
         return message.channel.send(missing);
@@ -28,7 +28,7 @@ module.exports = {
           .setThumbnail(no)
           .addField("EROR", "Beri hukuman yg bener")
           .addField("CONTOH", "punishment ban\npunishment kick\npunishment demote")
-          .setFooter("XNXX Development")
+          .setFooter(dev)
           .setColor(color)
           .setTimestamp()
         return message.channel.send(missing);
@@ -39,8 +39,7 @@ module.exports = {
         let ok = new Discord.MessageEmbed()
           .setThumbnail(yes)
           .addField("SUKSES", `Hukuman diatur ke ${args[0]}`)
-          .addField("CONTOH", "punishment ban\npunishment kick\npunishment demote")
-          .setFooter("XNXX Development")
+          .setFooter(dev)
           .setColor(color)
           .setTimestamp()
         return message.channel.send(ok);

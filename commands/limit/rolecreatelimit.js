@@ -46,7 +46,7 @@ module.exports = {
       db.set(`rolecreate_${message.guild.id}`, Number(args[0]))
     
         let ok = new Discord.MessageEmbed()
-          .setThumbnail(no)
+          .setThumbnail(yes)
           .addField("SUKSES", `Role create limit telah diatur ke ${Number(args[0])}`)
           .setFooter(dev)
           .setColor(color)

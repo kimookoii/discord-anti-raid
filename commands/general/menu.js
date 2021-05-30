@@ -2,7 +2,7 @@ const Discord = require("discord.js")
 
 module.exports = {
   name: "menu",
-  run: async (client, message, args, db, color, yes, no) => {
+  run: async (client, message, args, db, color, yes, no, dev) => {
     
     
 //* ----------------------------- ~ AXAN $ ZICC ~ ----------------------------- *//
@@ -41,8 +41,8 @@ module.exports = {
           .addField("Role Delete Limit", rdl, true)
           .addField("Logs", logs.toString(), true)
           .addField("Punishment", punish, true)
-          .addField("By", "Axan Ft. Zicc", true)
-          .setFooter("Axan Ft. Zicc Developer")
+          .addField("By", `${dev}`, true)
+          .setFooter(dev)
           .setColor(color)
           .setTimestamp()
         return message.channel.send(show)
