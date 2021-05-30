@@ -11,7 +11,7 @@ module.exports = {
       function check(msg, arr) { return arr.some(op => op.toLowerCase() === msg.toLowerCase());
     }
     
-      if (!args[1]) {
+      if (!args[0]) {
         let missing = new Discord.MessageEmbed()
           .setThumbnail(no)
           .addField("EROR", "Beri hukuman yg bener")
@@ -23,7 +23,7 @@ module.exports = {
       }
     
     
-      if (check(args[1], ["ban", "kick", "demote"]) === false) {
+      if (check(args[0], ["ban", "kick", "demote"]) === false) {
         let missing = new Discord.MessageEmbed()
           .setThumbnail(no)
           .addField("EROR", "Beri hukuman yg bener")
@@ -35,10 +35,10 @@ module.exports = {
       }
     
     
-        db.set(`punish_${message.guild.id}`, args[1].toLowerCase())
+        db.set(`punish_${message.guild.id}`, args[0].toLowerCase())
         let ok = new Discord.MessageEmbed()
           .setThumbnail(yes)
-          .addField("SUKSES", `Hukuman diatur ke ${args[1]}`)
+          .addField("SUKSES", `Hukuman diatur ke ${args[0]}`)
           .addField("CONTOH", "punishment ban\npunishment kick\npunishment demote")
           .setFooter("XNXX Development")
           .setColor(color)

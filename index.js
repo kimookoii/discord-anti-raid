@@ -20,15 +20,15 @@ client.aliases = new Collection();
     console.log(`[ON]: ${client.guilds.cache.size} Servers, ${client.channels.cache.size} channels & ${client.users.cache.size} users`)
     console.log('-------------------------------------');
   
-    const wkz = client.guilds.cache.get("id server mu").memberCount;
-    const krs = client.guilds.cache.get("738294317432438865").memberCount;
+    //const wkz = client.guilds.cache.get("824320012944408616").memberCount;
+    //const krs = client.guilds.cache.get("738294317432438865").memberCount;
     
     const status = [
-    `Whizkazz x Karsa`,
+    `Whizkazz x KarsaBestari`,
     `Anti Raid Bot`,
-    ``,
-      
+    `${client.users.cache.size} Users`
     ]
+    
   setInterval(() => {
     client.user.setActivity(status[Math.floor(Math.random() * status.length)], {type : "WATCHING"})
   }, 2000)
@@ -55,11 +55,13 @@ client.aliases = new Collection();
     const yes = "https://cdn.discordapp.com/emojis/848429615323021354.png?v=1";
     const no = "https://cdn.discordapp.com/emojis/848429469688397854.png?v=1";
 
+    const dev = "Axan Ft. Zicc Developer"
+    
     if (cmd.length === 0) return;
 
     let command = client.commands.get(cmd);
     if (!command) command = client.commands.get(client.aliases.get(cmd));
-    if (command) command.run(client, message, args, db, color, yes, no);
+    if (command) command.run(client, message, args, db, color, yes, no, dev);
 });
 
 

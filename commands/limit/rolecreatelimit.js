@@ -2,7 +2,7 @@ const Discord = require("discord.js")
 
 module.exports = {
   name: "rolecreatelimit",
-  run: async (client, message, args, db, color, yes, no) => {
+  run: async (client, message, args, db, color, yes, no, dev) => {
     
     
 //* ----------------------------- ~ AXAN $ ZICC ~ ----------------------------- *//
@@ -13,7 +13,7 @@ module.exports = {
           .setThumbnail(no)
           .addField("EROR", "Masukkan angka (0-9)")
           .addField("CONTOH", "rolecreatelimit 1")
-          .setFooter("XNXX Development")
+          .setFooter(dev)
           .setColor(color)
           .setTimestamp()
         return message.channel.send(missing);
@@ -25,7 +25,7 @@ module.exports = {
           .setThumbnail(no)
           .addField("EROR", "Masukkan angka (0-9)")
           .addField("CONTOH", "rolecreatelimit 1")
-          .setFooter("XNXX Development")
+          .setFooter(dev)
           .setColor(color)
           .setTimestamp()
         return message.channel.send(missing);
@@ -37,7 +37,7 @@ module.exports = {
           .setThumbnail(no)
           .addField("EROR", "Masukkan angka (0-9)")
           .addField("CONTOH", "rolecreatelimit 1")
-          .setFooter("XNXX Development")
+          .setFooter(dev)
           .setColor(color)
           .setTimestamp()
         return message.channel.send(missing);
@@ -48,7 +48,7 @@ module.exports = {
         let ok = new Discord.MessageEmbed()
           .setThumbnail(no)
           .addField("SUKSES", `Role create limit telah diatur ke ${Number(args[0])}`)
-          .setFooter("XNXX Development")
+          .setFooter(dev)
           .setColor(color)
           .setTimestamp()
         return message.channel.send(ok);

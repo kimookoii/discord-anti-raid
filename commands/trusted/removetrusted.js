@@ -2,7 +2,7 @@ const Discord = require("discord.js")
 
 module.exports = {
   name: "removetrusted",
-  run: async (client, message, args, db, color, yes, no) => {
+  run: async (client, message, args, db, color, yes, no, dev) => {
     
     
 //* ----------------------------- ~ AXAN $ ZICC ~ ----------------------------- *//
@@ -18,7 +18,7 @@ module.exports = {
           .addField("ERROR", "Harap mention user")
           .addField("CONTOH", "removetrusted @zicc#1101")
           .setColor(color)
-          .setFooter("XNXX Development")
+          .setFooter(dev)
           .setTimestamp()
         return message.channel.send(usermention) 
       }
@@ -34,7 +34,7 @@ module.exports = {
           .addField("ERROR", "User tersebut tidak ada pada trusted list")
           .setThumbnail(no)
           .setColor(color)
-          .setFooter("XNXX Development")
+          .setFooter(dev)
           .setTimestamp()
         return message.channel.send(unabletofind) 
       }
@@ -50,7 +50,7 @@ module.exports = {
           .addField("SUKSES", `Menghapus ${user} dari trusted list`)
           .setThumbnail(yes)
           .setColor(color)
-          .setFooter("XNXX Development")
+          .setFooter(dev)
           .setTimestamp()
         return message.channel.send(deleted)
       } 
@@ -61,7 +61,7 @@ module.exports = {
           .addField("ERROR", "User tersebut tidak ada pada trusted list")
           .setThumbnail(no)
           .setColor(color)
-          .setFooter("XNXX Development")
+          .setFooter(dev)
           .setTimestamp()
         return message.channel.send(nothing) 
       } 
@@ -72,7 +72,7 @@ module.exports = {
         let onlyowner = new Discord.MessageEmbed()
           .setThumbnail(no)
           .setColor(color)
-          .setFooter("XNXX Development")
+          .setFooter(dev)
           .setTimestamp()
           .addField("ERROR", "Hanya owner server yang dapat menggunakan command ini")
         return message.channel.send(onlyowner)

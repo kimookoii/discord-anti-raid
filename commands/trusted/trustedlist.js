@@ -11,7 +11,7 @@ module.exports = {
         let embed = new Discord.MessageEmbed()
           .setAuthor("TRUSTED LIST")
           .setColor(color)
-          .setFooter("XNXX Development")
+          .setFooter("Axan Ft. Zicc Developer")
           .setTimestamp()
         
         

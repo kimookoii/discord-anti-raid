@@ -2,7 +2,7 @@ const Discord = require("discord.js")
 
 module.exports = {
   name: "addtrusted",
-  run: async (client, message, args, db, color, yes, no) => {
+  run: async (client, message, args, db, color, yes, no, dev) => {
     
     
 //* ----------------------------- ~ AXAN $ ZICC ~ ----------------------------- *//
@@ -18,7 +18,7 @@ module.exports = {
           .addField("ERROR", "Harap mention user")
           .addField("CONTOH", "addtrusted @zicc#1101")
           .setColor(color)
-          .setFooter("XNXX Development")
+          .setFooter(dev)
           .setTimestamp()
         return message.channel.send(usermention) 
       }
@@ -31,7 +31,7 @@ module.exports = {
           .setThumbnail(no)
           .addField("ERROR", "User tersebut sudah ada pada trusted list")
           .setColor(color)
-          .setFooter("XNXX Development")
+          .setFooter(dev)
           .setTimestamp()
         return message.channel.send(trusteteted)
       }
@@ -42,7 +42,7 @@ module.exports = {
           .addField("SUKSES", `Menambahkan ${user} dari trusted list`)
           .setThumbnail(yes)
           .setColor(color)
-          .setFooter("XNXX Development")
+          .setFooter(dev)
           .setTimestamp()
         return message.channel.send(trusteteted)
       } 
@@ -52,7 +52,7 @@ module.exports = {
         let onlyowner = new Discord.MessageEmbed()
           .setThumbnail(no)
           .setColor(color)
-          .setFooter("XNXX Development")
+          .setFooter(dev)
           .setTimestamp()
           .addField("ERROR", "Hanya owner server yang dapat menggunakan command ini")
         return message.channel.send(onlyowner)
