@@ -19,7 +19,7 @@ module.exports = {
         return message.channel.send(missing);
       }
  
-      let channel = message.guild.channels.cache.find((x) => (x.name === "「💭」suggestion" || x.name === "「💭」suggestion"))
+      let channel = client.channels.cache.get("847517455403581510")
     
       if(!channel) { return message.channel.send("Sementara tidak ada saluran untuk saran") }
 
