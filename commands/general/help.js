@@ -15,25 +15,7 @@ module.exports = {
           
           .addField('SETUP' , '`logs` , `menu` , `punishment` , `clearuser`')
           .addField('LIMIT' , '`banlimit` ,  , `channelcreatelimit` , `channeldeletelimit`')
-          .addField("TRUSTED", '`addtrustedlist` , `removetrusted`'`
-          
-          
-          
-          
-          > banlimit
-          > kicklimit
-          > channelcreatelimit
-          > channeldeletelimit
-          > rolecreatelimit
-          > roledeletelimit
-          > addtrusted
-          > removetrusted
-          > trustedlist
-          > punishment
-          > clearuser
-          > logs
-          > menu
-          `)
+          .addField("TRUSTED", '`addtrustedlist` , `removetrusted`')
         
           .addField("SUPPORT", " [Whizkazz](https://discord.gg/GJQYKR9YVV)| [Karsa](https://discord.gg/5wDwU2ERcZ)", true)
           .setFooter("XNXX Development")

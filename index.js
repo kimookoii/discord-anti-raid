@@ -20,7 +20,20 @@ client.aliases = new Collection();
     console.log(`[ON]: ${client.guilds.cache.size} Servers, ${client.channels.cache.size} channels & ${client.users.cache.size} users`)
     console.log('-------------------------------------');
   
-    client.user.setActivity('Wkz x Karsa', { type: 'WATCHING'});
+    const wkz = client.guilds.cache.get("id server mu").memberCount;
+    const krs = client.guilds.cache.get("738294317432438865").memberCount;
+    
+    const status = [
+    `Whizkazz x Karsa`,
+    `Anti Raid Bot`,
+    ``,
+      
+    ]
+  setInterval(() => {
+    client.user.setActivity(status[Math.floor(Math.random() * status.length)], {type : "WATCHING"})
+  }, 2000)
+    
+    
 });
 
 
