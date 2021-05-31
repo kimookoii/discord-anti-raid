@@ -11,14 +11,14 @@ module.exports = {
         let help = new Discord.MessageEmbed()
           .setAuthor("ANTI RAID HELP")
           .setThumbnail(client.user.displayAvatarURL({ dynamic: true }))
-          .setDescription("Bot Anti-Raid Collab Whizkazz x Karsa")
+          .setDescription("Bot Anti-Raid Collab Whizkazz x KarsaBestari")
         
-          .addField('MAIN' , '`menu` , `suggest`')
+          .addField('MAIN' , '`menu` , `suggest` , `invite`')
           .addField('SETUP' , '`logs` , `punishment` , `clearuser`')
           .addField('LIMIT' , '`banlimit` , `kicklimit` , `channelcreatelimit` , `channeldeletelimit` , `rolecreatelimit` , `roledeletelimit`')
           .addField("TRUSTED", '`addtrusted` , `removetrusted` , `trustedlist`')
         
-          .addField("SUPPORT", "[Support Server](https://discord.gg/caX4QFHGnN)  |  [Whizkazz](https://discord.gg/GJQYKR9YVV)  |  [Karsa](https://discord.gg/5wDwU2ERcZ)", true)
+          .addField("SUPPORT", "[Support Server](https://discord.gg/8hSF7uYVzR)  |  [Whizkazz](https://discord.gg/GJQYKR9YVV)  |  [KarsaBestari](https://discord.gg/5wDwU2ERcZ)  |  [Invite](https://discord.com/api/oauth2/authorize?client_id=848547939521265686&permissions=8&scope=bot)", true)
           .setFooter(dev)
           .setColor(color)
           .setTimestamp()
