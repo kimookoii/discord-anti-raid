@@ -9,7 +9,6 @@ module.exports = {
     
     
       if (message.author.id === message.guild.ownerID) {
-      let user = message.mentions.users.first()
       
       
       if (!args[0]) {

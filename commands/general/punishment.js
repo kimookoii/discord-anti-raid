@@ -8,6 +8,8 @@ module.exports = {
 //* ----------------------------- ~ AXAN $ ZICC ~ ----------------------------- *//
     
     
+      if (message.author.id === message.guild.ownerID) {
+      
       function check(msg, arr) { return arr.some(op => op.toLowerCase() === msg.toLowerCase());
     }
     
@@ -44,4 +46,16 @@ module.exports = {
           .setTimestamp()
         return message.channel.send(ok);
       }
+    
+    
+      else {
+        let onlyowner = new Discord.MessageEmbed()
+          .setThumbnail(no)
+          .setColor(color)
+          .setFooter(dev)
+          .setTimestamp()
+          .addField("ERROR", "Hanya owner server yang dapat menggunakan command ini")
+        return message.channel.send(onlyowner)
+      }
     }
+  }

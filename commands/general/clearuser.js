@@ -8,6 +8,8 @@ module.exports = {
 //* ----------------------------- ~ AXAN $ ZICC ~ ----------------------------- *//
 
 
+      if (message.author.id === message.guild.ownerID) {
+      
       let user = message.mentions.users.first()
       let stuff = [`${message.guild.id}_${user.id}_rolecreate`, `${message.guild.id}_${user.id}_roledelete`, `${message.guild.id}_${user.id}_channelcreate`, `${message.guild.id}_${user.id}_channeldelete`, `${message.guild.id}_${user.id}_banlimit`, `${message.guild.id}_${user.id}_kicklimit`]
       
@@ -21,4 +23,16 @@ module.exports = {
           .setTimestamp()
         return message.channel.send(yoi);
       }
+    
+    
+      else {
+        let onlyowner = new Discord.MessageEmbed()
+          .setThumbnail(no)
+          .setColor(color)
+          .setFooter(dev)
+          .setTimestamp()
+          .addField("ERROR", "Hanya owner server yang dapat menggunakan command ini")
+        return message.channel.send(onlyowner)
+      }
     }
+  }
