@@ -8,6 +8,10 @@ module.exports = {
 //* ----------------------------- ~ AXAN $ ZICC ~ ----------------------------- *//
     
     
+      if (message.author.id === message.guild.ownerID) {
+      let user = message.mentions.users.first()
+      
+      
       if (!args[0]) {
         let missing = new Discord.MessageEmbed()
           .setThumbnail(no)
@@ -53,4 +57,16 @@ module.exports = {
           .setTimestamp()
         return message.channel.send(ok);
       }
+    
+    
+      else {
+        let onlyowner = new Discord.MessageEmbed()
+          .setThumbnail(no)
+          .setColor(color)
+          .setFooter(dev)
+          .setTimestamp()
+          .addField("ERROR", "Hanya owner server yang dapat menggunakan command ini")
+        return message.channel.send(onlyowner)
+      }
     }
+  }
