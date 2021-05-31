@@ -13,12 +13,12 @@ module.exports = {
           .setThumbnail(client.user.displayAvatarURL({ dynamic: true }))
           .setDescription("Bot Anti-Raid Collab Whizkazz x Karsa")
         
-          .addField('MAIN' , '`menu`')
+          .addField('MAIN' , '`menu` , `suggest`')
           .addField('SETUP' , '`logs` , `punishment` , `clearuser`')
           .addField('LIMIT' , '`banlimit` , `kicklimit` , `channelcreatelimit` , `channeldeletelimit` , `rolecreatelimit` , `roledeletelimit`')
-          .addField("TRUSTED", '`addtrustedlist` , `removetrusted` , `trustedlist`')
+          .addField("TRUSTED", '`addtrusted` , `removetrusted` , `trustedlist`')
         
-          .addField("SUPPORT", "[Support Server](https://discord.gg/caX4QFHGnN) | [Whizkazz](https://discord.gg/GJQYKR9YVV) | [Karsa](https://discord.gg/5wDwU2ERcZ)", true)
+          .addField("SUPPORT", "[Support Server](https://discord.gg/caX4QFHGnN)  |  [Whizkazz](https://discord.gg/GJQYKR9YVV)  |  [Karsa](https://discord.gg/5wDwU2ERcZ)", true)
           .setFooter(dev)
           .setColor(color)
           .setTimestamp()
