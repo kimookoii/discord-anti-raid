@@ -17,7 +17,7 @@ module.exports = {
         client.guilds.cache
           .sort((a, b) => b.memberCount - a.memberCount)
           .map(r => r)
-          .map((r, i) => `\`\`\`yml\n${i + 1} : ${r.name} :\n  : ID - ${r.id} - ${r.memberCount} Members`\`\`)
+          .map((r, i) => `\`\`\`yml\n${i + 1} : ${r.name} :\n  : ID - ${r.id} - ${r.memberCount} Members\`\`\``)
           .slice(0, 10)
           //.join("\n\n");
 
@@ -75,13 +75,13 @@ module.exports = {
         if (!i0 || !i1) {
             return msg.delete(); }
 
-        description =`Total Servers - ${client.guilds.cache.size}\n\n` +
+        description = `Total Servers - ${client.guilds.cache.size}\n\n` + 
         client.guilds.cache
           .sort((a, b) => b.memberCount - a.memberCount)
           .map(r => r)
-          .map((r, i) => `**${i + 1}** - ${r.name} | ${r.memberCount} Members`)
-          .slice(i0, i1)
-          .join("\n");
+          .map((r, i) => `\`\`\`yml\n${i + 1} : ${r.name} :\n  : ID - ${r.id} - ${r.memberCount} Members\`\`\``)
+          .slice(0, 10)
+          //.join("\n\n");
 
         embed.setTitle(`Page - ${page}/${Math.round(client.guilds.cache.size / 10 + 1)}`)
              .setDescription(description);

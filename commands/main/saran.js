@@ -1,7 +1,7 @@
 const Discord = require("discord.js")
 
 module.exports = {
-  name: "suggest",
+  name: "saran",
   run: async (client, message, args, db, color, yes, no, dev) => {
     
     
@@ -11,8 +11,8 @@ module.exports = {
       if(!args.length) {
         let missing = new Discord.MessageEmbed()
           .setThumbnail(no)
-          .addField("EROR", "Beri suggesti yang bener dong")
-          .addField("CONTOH", "suggest nambah anu")
+          .addField("EROR", "Beri saran yang bener dong")
+          .addField("CONTOH", "saran nambah anu")
           .setFooter(dev)
           .setColor(color)
           .setTimestamp()
@@ -24,7 +24,7 @@ module.exports = {
       if(!channel) { return message.channel.send("Sementara tidak ada saluran untuk saran") }
 
         let embed = new Discord.MessageEmbed()
-          .setAuthor("SUGESTION")
+          .setAuthor("SARAN")
           .setThumbnail(message.author.avatarURL())
           .setDescription(args.join(" "))
           .setColor(color)
@@ -38,7 +38,6 @@ module.exports = {
       
         const sug = new Discord.MessageEmbed()
           .setColor(color)
-          .setAuthor("SUGESTION")
           .setThumbnail(yes)
           .addField("SUKSES", `Mengirim saran kamu ke ${channel}`)
           .setFooter(`Terimakasih ${message.author.username}#${message.member.user.discriminator}`)
