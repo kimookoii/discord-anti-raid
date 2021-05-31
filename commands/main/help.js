@@ -18,7 +18,7 @@ module.exports = {
           .addField('LIMIT' , '`banlimit` , `kicklimit` , `channelcreatelimit` , `channeldeletelimit` , `rolecreatelimit` , `roledeletelimit`')
           .addField("TRUSTED", '`addtrusted` , `removetrusted` , `trustedlist`')
         
-          .addField("SUPPORT", "[Support Server](https://discord.gg/vxcuD5ShJC)  |  [Whizkazz](https://discord.gg/GJQYKR9YVV)  |  [KarsaBestari](https://discord.gg/5wDwU2ERcZ)  |  [Invite](https://discord.com/api/oauth2/authorize?client_id=848547939521265686&permissions=8&scope=bot)", true)
+          .addField("SUPPORT", "[Support Server](https://discord.gg/vxcuD5ShJC)  |  [Whizkazz](https://discord.gg/GJQYKR9YVV)  //*|  [KarsaBestari](https://discord.gg/5wDwU2ERcZ) *// |  [Invite](https://discord.com/api/oauth2/authorize?client_id=848547939521265686&permissions=8&scope=bot)", true)
           .setFooter(dev)
           .setColor(color)
           .setTimestamp()
