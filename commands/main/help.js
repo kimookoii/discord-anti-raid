@@ -13,7 +13,7 @@ module.exports = {
           .setThumbnail(client.user.displayAvatarURL({ dynamic: true }))
           .setDescription("Bot Anti-Raid Collab Whizkazz x KarsaBestari")
         
-          .addField('MAIN' , '`menu` , `suggest` , `invite`')
+          .addField('MAIN' , '`invite` , `menu` , `serverlist` , `suggest`')
           .addField('SETUP' , '`logs` , `punishment` , `clearuser`')
           .addField('LIMIT' , '`banlimit` , `kicklimit` , `channelcreatelimit` , `channeldeletelimit` , `rolecreatelimit` , `roledeletelimit`')
           .addField("TRUSTED", '`addtrusted` , `removetrusted` , `trustedlist`')

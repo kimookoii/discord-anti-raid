@@ -17,9 +17,9 @@ module.exports = {
         client.guilds.cache
           .sort((a, b) => b.memberCount - a.memberCount)
           .map(r => r)
-          .map((r, i) => `**${i + 1}** - ${r.name} | ${r.memberCount} Members\nID - ${r.id}`)
+          .map((r, i) => `\`\`\`yml\n${i + 1} : ${r.name} :\n  : ID - ${r.id} - ${r.memberCount} Members`\`\`)
           .slice(0, 10)
-          .join("\n\n");
+          //.join("\n\n");
 
         let embed = new Discord.MessageEmbed()
           .setAuthor(`SERVER LIST`)
