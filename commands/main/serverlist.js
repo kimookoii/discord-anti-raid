@@ -31,6 +31,10 @@ module.exports = {
 
         let msg = await message.channel.send(embed);
 
+    
+//* ----------------------------- ~ AXAN $ ZICC ~ ----------------------------- *//
+    
+    
         await msg.react("⬅");
         await msg.react("➡");
         await msg.react("❌");
@@ -39,13 +43,16 @@ module.exports = {
 
         collector.on("collect", async (reaction, user) => {
           
+          
+//* ----------------------------- ~ AXAN $ ZICC ~ ----------------------------- *//
+          
+          
         if (reaction._emoji.name === "⬅") {
           i0 = i0 - 10;
           i1 = i1 - 10;
           page = page - 1;
 
         if (i0 + 1 < 0) {
-            console.log(i0)
             return msg.delete(); }
           
         if (!i0 || !i1) {
@@ -59,11 +66,16 @@ module.exports = {
           .slice(i0, i1)
           .join("\n");
 
-        embed.setTitle(`Page - ${page}/${Math.round(client.guilds.cache.size / 10 + 1)}`)
-             .setDescription(description);
+        //embed.setTitle(`Page - ${page}/${Math.round(client.guilds.cache.size / 10 + 1)}`)
+        embed.setFooter(`${dev} • Halaman - ${page}/${Math.ceil(client.guilds.cache.size / 10)}`)
+        embed.setDescription(description);
 
         msg.edit(embed);}
 
+          
+//* ----------------------------- ~ AXAN $ ZICC ~ ----------------------------- *//
+          
+          
         if (reaction._emoji.name === "➡") {
           
           i0 = i0 + 10;
@@ -80,19 +92,28 @@ module.exports = {
           .sort((a, b) => b.memberCount - a.memberCount)
           .map(r => r)
           .map((r, i) => `\`\`\`yml\n${i + 1} : ${r.name} :\n  : ID - ${r.id} - ${r.memberCount} Members\`\`\``)
-          .slice(0, 10)
+          .slice(i0, i1);
           //.join("\n\n");
 
-        embed.setTitle(`Page - ${page}/${Math.round(client.guilds.cache.size / 10 + 1)}`)
-             .setDescription(description);
+        //embed.setTitle(`Page - ${page}/${Math.round(client.guilds.cache.size / 10 + 1)}`)
+        embed.setFooter(`${dev} • Halaman - ${page}/${Math.ceil(client.guilds.cache.size / 10)}`)
+        embed.setDescription(description);
 
         msg.edit(embed);
         }
 
+          
+//* ----------------------------- ~ AXAN $ ZICC ~ ----------------------------- *//
+          
+          
         if (reaction._emoji.name === "❌") {
           return msg.delete();
         }
 
+          
+//* ----------------------------- ~ AXAN $ ZICC ~ ----------------------------- *//
+          
+          
         await reaction.users.remove(message.author.id);
       });
     }
