@@ -3,7 +3,7 @@ const { Client, Collection } = require('discord.js');
 const client = new Client({disableMentions: 'everyone'}, {ws:{properties:{$browser: "Discord Android" }}});
 const { prefix } = require('./config.json');
 const db = require("quick.db")
-const dev = "Axan Ft. Zicc Developer"
+const dev = "Axan Ft. ZICC Developer"
 
 
 client.commands = new Collection();
@@ -25,6 +25,7 @@ client.aliases = new Collection();
     //const krs = client.guilds.cache.get("738294317432438865").memberCount;
     
     const status = [
+    `${dev}`,
     `Anti Raid Bot`,
     `$help | ${client.users.cache.size} Users`,
     `$help | ${client.guilds.cache.size} Servers`,
