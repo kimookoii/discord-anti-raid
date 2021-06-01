@@ -62,7 +62,7 @@ module.exports = {
         client.guilds.cache
           .sort((a, b) => b.memberCount - a.memberCount)
           .map(r => r)
-          .map((r, i) => `**${i + 1}** - ${r.name} | ${r.memberCount} Members`)
+          .map((r, i) => `\`\`\`yml\n${i + 1} : ${r.name} :\n  : ID - ${r.id} - ${r.memberCount} Members\`\`\``)
           .slice(i0, i1)
           .join("\n");
 
