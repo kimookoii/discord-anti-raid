@@ -13,7 +13,7 @@ module.exports = {
           .setThumbnail(client.user.displayAvatarURL({ dynamic: true }))
           .setDescription("Bot Anti-Raid Collab Whizkazz x KarsaBestari\nUntuk mengetahui update bot ini, bisa join [Support Server](https://discord.gg/vxcuD5ShJC)")
         
-          .addField('MAIN' , '`invite` , `menu` , `serverlist` , `suggest`')
+          .addField('MAIN' , '`invite` , `menu` ,  `saran` , `serverlist` , `supportserver`')
           .addField('SETUP' , '`logs` , `punishment` , `clearuser`')
           .addField('LIMIT' , '`banlimit` , `kicklimit` , `channelcreatelimit` , `channeldeletelimit` , `rolecreatelimit` , `roledeletelimit`')
           .addField("TRUSTED", '`addtrusted` , `removetrusted` , `trustedlist`')

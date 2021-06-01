@@ -17,7 +17,7 @@ module.exports = {
         client.guilds.cache
           .sort((a, b) => b.memberCount - a.memberCount)
           .map(r => r)
-          .map((r, i) => `\`\`\`yml\n${i + 1} : ${r.name} :\n  : ID - ${r.id} - ${r.memberCount} Members\`\`\``)
+          .map((r, i) => `\`\`\`hs\n${i + 1} : ${r.name}\n  : ID ${r.id} - ${r.memberCount} Members\`\`\``)
           .slice(0, 10)
           //.join("\n\n");
 
@@ -55,14 +55,14 @@ module.exports = {
         if (i0 + 1 < 0) {
             return msg.delete(); }
           
-        if (!i0 || !i1) {
-            return msg.delete(); }
+        //if (!i0 || !i1) {
+        //    return msg.delete(); }
 
         description = `Total Servers - ${client.guilds.cache.size}\n\n` +
         client.guilds.cache
           .sort((a, b) => b.memberCount - a.memberCount)
           .map(r => r)
-          .map((r, i) => `\`\`\`yml\n${i + 1} : ${r.name} :\n  : ID - ${r.id} - ${r.memberCount} Members\`\`\``)
+          .map((r, i) => `\`\`\`hs\n${i + 1} : ${r.name}\n  : ID ${r.id} - ${r.memberCount} Members\`\`\``)
           .slice(i0, i1)
           .join("\n");
 
@@ -91,7 +91,7 @@ module.exports = {
         client.guilds.cache
           .sort((a, b) => b.memberCount - a.memberCount)
           .map(r => r)
-          .map((r, i) => `\`\`\`yml\n${i + 1} : ${r.name} :\n  : ID - ${r.id} - ${r.memberCount} Members\`\`\``)
+          .map((r, i) => `\`\`\`hs\n${i + 1} : ${r.name}\n  : ID ${r.id} - ${r.memberCount} Members\`\`\``)
           .slice(i0, i1);
           //.join("\n\n");
 
