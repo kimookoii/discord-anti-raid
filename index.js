@@ -29,6 +29,8 @@ client.aliases = new Collection();
     `Anti Raid Bot`,
     `$help | ${client.users.cache.size} Users`,
     `$help | ${client.guilds.cache.size} Servers`,
+//    `BOT STILL UNDER REPAIR !`,
+//    `STILL MAINTENANCE !`
     ]
     
   setInterval(() => {
@@ -70,8 +72,6 @@ client.aliases = new Collection();
 
 
   client.on("roleCreate", async (role, message) => {
-
-
     
     if (role.managed === true) return;
     const log = await role.guild.fetchAuditLogs({ type: 'ROLE_CREATE' }).then(audit => audit.entries.first())
@@ -266,6 +266,7 @@ client.aliases = new Collection();
 
 
   client.on("channelCreate", async channel => {
+    
     const log = await channel.guild.fetchAuditLogs({ type: 'CHANNEL_CREATE' }).then(audit => audit.entries.first())
     const user = log.executor
     
@@ -362,6 +363,7 @@ client.aliases = new Collection();
 
 
   client.on("channelDelete", async channel => {
+    
     const log = await channel.guild.fetchAuditLogs({ type: 'CHANNEL_DELETE' }).then(audit => audit.entries.first())
     const user = log.executor
     
@@ -453,9 +455,8 @@ client.aliases = new Collection();
 //* ----------------------------- ~ AXAN $ ZICC ~ ----------------------------- *//
 
 
-  client.on("guildMemberRemove", async member => { 
-    const log1 = await member.guild.fetchAuditLogs().then(audit => audit.entries.first()) 
-    if (log1.action === "MEMBER_KICK") { 
+  client.on("guildMemberRemove", async member => {
+
     const log = await member.guild.fetchAuditLogs({ type: "MEMBER_KICK" }) .then(audit => audit.entries.first());
     const user = log.executor
     
@@ -537,7 +538,7 @@ client.aliases = new Collection();
             .setColor("GREEN")
             .setFooter(dev)
             .setTimestamp()
-        if (logs) { logs.send({ embed: embed }) } }
+        if (logs) { logs.send({ embed: embed }) }
       }
    }
 )
@@ -546,8 +547,8 @@ client.aliases = new Collection();
 //* ----------------------------- ~ AXAN $ ZICC ~ ----------------------------- *//
 
 
-  client.on("guildBanAdd", async (guild, userr) => {
-    let member = guild.members.cache.get(userr.id)
+  client.on("guildMemberRemove", async member => {
+    
     const log = await member.guild.fetchAuditLogs({ type: "MEMBER_BAN" }).then(audit => audit.entries.first());
     const user = log.executor
     
@@ -639,9 +640,15 @@ client.aliases = new Collection();
 
 
   client.on("guildMemberRemove", async member => {
+    
     let user = member.user
     let stuff = [`${member.guild.id}_${user.id}_rolecreate`, `${member.guild.id}_${user.id}_roledelete`, `${member.guild.id}_${user.id}_channelcreate`, `${member.guild.id}_${user.id}_channeldelete`, `${member.guild.id}_${user.id}_banlimit`, `${member.guild.id}_${user.id}_kicklimit`]
     stuff.forEach(bruh => db.delete(bruh))
-  })
+  }
+)
+
+
+//* ----------------------------- ~ AXAN $ ZICC ~ ----------------------------- *//
+
 
   client.login(process.env.token).catch(err => { console.log('[ERROR]: Invalid Token Provided'); });
