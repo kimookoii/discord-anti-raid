@@ -39,7 +39,6 @@ Sebelum menjalankan bot, pastikan kamu sudah menginstal:
    ```bash
    git clone https://github.com/username/discord-antiraid.git
    cd discord-antiraid
-````
 
 2. **Instal Dependencies**
 
