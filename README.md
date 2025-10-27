@@ -112,7 +112,9 @@ Proyek ini dirilis di bawah lisensi **MIT License** — kamu bebas menggunakan, 
 
 ## ✨ Kontributor
 
-Dikembangkan oleh [@kimookoii](https://github.com/kimookoii) [@Axann](https://github.com/Axann)
+Made with ❤️ by [@kimookoii](https://github.com/kimookoii) n [@Axann](https://github.com/Axann)
+
+---
 
 > "Protect your community, automate your peace."
 
