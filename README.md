@@ -48,15 +48,20 @@ Sebelum menjalankan bot, pastikan kamu sudah menginstal:
 
 3. **Konfigurasi**
 
-   * Buka file `config.json` lalu isi token dan prefix:
+   * Buka file `.env` lalu isi token:
+
+     ```json
+       TOKEN=token_bot
+     ```
+
+   * Buka file `config.json` lalu isi prefix:
 
      ```json
      {
        "prefix": "$",
-       "token": "YOUR_DISCORD_BOT_TOKEN"
      }
      ```
-
+     
 4. **Jalankan Bot**
 
    ```bash
