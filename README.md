@@ -109,7 +109,7 @@ Sebelum menjalankan bot, pastikan kamu sudah menginstal:
 
 ## 👥 Developer
 
-**Axan Ft. ZICC Developer**
+Dikembangkan oleh [@kimookoii](https://github.com/kimookoii) [@Axann](https://github.com/Axann)
 
 > "Protect your community, automate your peace."
 
