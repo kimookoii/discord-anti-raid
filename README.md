@@ -23,13 +23,10 @@ Dibangun menggunakan **Node.js** dan **Discord.js**, dengan sistem deteksi otoma
 
 ---
 
-## 🧩 Persyaratan
-
-Sebelum menjalankan bot, pastikan kamu sudah menginstal:
-
-- [Node.js](https://nodejs.org/en/) versi **16.x** atau lebih tinggi  
-- [Discord.js](https://discord.js.org/) versi **12.x**
-- **quick.db** untuk penyimpanan data  
+## 🧩 Teknologi yang Digunakan
+- [Discord.js](https://discord.js.org/) (v12.x)
+- **quick.db** untuk penyimpanan data
+- Node.js (v12.x)
 
 ---
 
@@ -48,7 +45,7 @@ Sebelum menjalankan bot, pastikan kamu sudah menginstal:
 
 3. **Konfigurasi**
 
-   * Buka file `.env` lalu isi token:
+   * Buat file `.env` (atau tambahkan secara manual di sistem host):
 
      ```json
        TOKEN=token_bot
@@ -107,16 +104,16 @@ Sebelum menjalankan bot, pastikan kamu sudah menginstal:
 
 ---
 
-## 👥 Developer
+## 📄 Lisensi
+
+Proyek ini dirilis di bawah lisensi **MIT License** — kamu bebas menggunakan, memodifikasi, dan mendistribusikannya dengan mencantumkan atribusi.
+
+---
+
+## ✨ Kontributor
 
 Dikembangkan oleh [@kimookoii](https://github.com/kimookoii) [@Axann](https://github.com/Axann)
 
 > "Protect your community, automate your peace."
-
----
-
-## 📜 Lisensi
-
-Proyek ini dilisensikan di bawah **MIT License** — silakan gunakan, ubah, atau kembangkan sesuai kebutuhanmu.
 
 ---
